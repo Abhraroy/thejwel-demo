@@ -19,6 +19,11 @@ const nextConfig: NextConfig = {
         destination: "/style/:slug",
         permanent: true,
       },
+      {
+        source: "/admin/:path*",
+        destination: "https://thejweladmin-demo.vercel.app/:path*",
+        permanent: true,
+      },
     ];
   },
   // Allow larger payloads for server actions (image upload)
